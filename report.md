@@ -193,8 +193,3 @@ This project provided valuable insights into machine learning applications in fi
 - **Real-time Pipeline**: Deploy continuous data collection and prediction system
 - **Model Interpretability**: Add SHAP values or feature importance analysis
 - **Production Readiness**: Implement model monitoring, retraining, and deployment infrastructure
-
----
-
-This project successfully demonstrated the feasibility of machine learning for cryptocurrency price prediction while highlighting the challenges and opportunities in financial forecasting. The results validate the hypothesis that classification approaches are more effective than regression for directional prediction, providing a foundation for future research in algorithmic trading systems.</content>
-<parameter name="filePath">c:\Users\Jongbin\Bitcoin_Prediction_Techniques\Bitcoin_Prediction_Techniques\report.md
