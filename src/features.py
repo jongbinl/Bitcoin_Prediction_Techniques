@@ -2,9 +2,7 @@ import pandas as pd
 import numpy as np
 
 def calculate_rsi(series, period=14):
-    """
-    Calculate Relative Strength Index (RSI).
-    """
+    
     delta = series.diff()
     gain = (delta.where(delta > 0, 0)).rolling(window=period).mean()
     loss = (-delta.where(delta < 0, 0)).rolling(window=period).mean()
@@ -12,9 +10,7 @@ def calculate_rsi(series, period=14):
     return 100 - (100 / (1 + rs))
 
 def add_features(df):
-    """
-    Add engineered features to the dataframe.
-    """
+   
     # Returns
     df['return_1d'] = df['close'].pct_change(1)
     df['return_3d'] = df['close'].pct_change(3)
@@ -45,7 +41,7 @@ def add_features(df):
     # Target for classification
     df['direction'] = (df['next_return'] > 0).astype(int)
     
-    # Drop NaN
+    # Dropna
     df.dropna(inplace=True)
     
     return df
