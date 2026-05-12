@@ -6,9 +6,8 @@ from sklearn.metrics import accuracy_score, f1_score, r2_score, mean_squared_err
 import joblib
 
 def train_models(X, y_clf, y_reg):
-    """
-    Train classification and regression models.
-    """
+    #Train classification and regression models.
+
     models_clf = {
         'LogisticRegression': LogisticRegression(random_state=42, max_iter=1000),
         'RandomForestClassifier': RandomForestClassifier(random_state=42)
